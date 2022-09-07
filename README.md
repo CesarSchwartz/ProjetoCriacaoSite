@@ -28,7 +28,7 @@ HTML:
 
 Base.html, 
 Conta.html, 
-Contatos.htm, l
+Contatos.html, 
 CriarPost.html, 
 EditarPerfil.html, 
 ExibirPost.html, 
