@@ -14,12 +14,12 @@ criado a partir do "SQLALCHEMY".
 
 FERRAMENTAS USADAS:
 
-Flask
-Sqlalchemy
-Secrets
-Os
-Pillow
-Datetime
+Flask, 
+Sqlalchemy, 
+Secrets, 
+Os, 
+Pillow, 
+Datetime.
 
 
 ARQUIVOS DO SITE:
