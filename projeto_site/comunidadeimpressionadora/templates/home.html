@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container mt-3">
+        <h1 style="color: black"> Comunidade Hashtag - Hashtag Treinamentos</h1>
+        <h4> Alunos, Experts e a galera da Hashtag em um só lugar.</h4>
+        <hr>
+        <strong class="container"><h3>BATE-PAPO HASHTAG</h3></strong>
+        {% for post in posts %}
+            <div class="row mt-4 p-3 border meupost">
+                <div class="col col-3">
+                    <div class="image pe-2"><img src="{{ url_for('static', filename='foto perfil/{}'.format(post.autor.foto_perfil)) }}" class="rounded" width="200" ></div>
+                    <strong>{{ post.autor.usuario }}</strong>
+
+                    <div class="row justify-content-center ">
+                            {% for cursos in post.autor.cursos.split(';') %}
+                                <button type="button" class="btn btn-success mt-2" disabled>{{ cursos }}</button>
+                            {% endfor %}
+                    </div>
+                </div>
+                <div class="col col-9">
+                    <a style="text-decoration: none" href="{{ url_for('exibir_post', post_id=post.id) }}"><h4>{{ post.titulo }}</h4></a>
+                    <p>{{ post.corpo }}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <span class="me-4"></span>
+{% endblock %}

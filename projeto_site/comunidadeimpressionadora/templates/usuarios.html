@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="container">
+        <h1>Comunidade Hashtag</h1>
+        <p><h4>Tabela de Usuários da Comunidade Hashtag.</h4></p>
+        <hr>
+        <br>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Nº</th>
+                  <th scope="col">Nome Usuário</th>
+                  <th scope="col">Quantidade Posts</th>
+                  <th scope="col">Cursos</th>
+                </tr>
+              </thead>
+                {% for i, usuario in enumerate(lista_usuarios, start=1) %}
+                  <tbody>
+                    <tr>
+                      <th scope="row">{{ i }}</th>
+                      <td>{{ usuario.usuario }}</td>
+                      <td>{{ usuario.contar_post() }}</td>
+                      <td>{{ usuario.cursos.replace(';', ' | ') }}</td>
+                    </tr>
+                  </tbody>
+                {% endfor %}
+            </table>
+    </div>
+{% endblock %}
