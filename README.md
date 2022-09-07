@@ -26,31 +26,31 @@ ARQUIVOS DO SITE:
 
 HTML:
 
-Base.html
-Conta.html
-Contatos.html
-CriarPost.html
-EditarPerfil.html
-ExibirPost.html
-Home.html
-Perfil.html
-Usuarios.html
+Base.html, 
+Conta.html, 
+Contatos.htm, l
+CriarPost.html, 
+EditarPerfil.html, 
+ExibirPost.html, 
+Home.html, 
+Perfil.html, 
+Usuarios.html.
 
 PYTHON:
 
-__init__.py
-Forms.py
-Models.py
-Route.py
-Main.py
+__init__.py, 
+Forms.py, 
+Models.py, 
+Route.py, 
+Main.py.
 
 CSS:
 
-Main.css
+Main.css.
 
 DATABASE:
 
-Comunidade.db
+Comunidade.db.
 
 
 
